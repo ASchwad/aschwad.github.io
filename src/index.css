@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 h1 {
@@ -21,6 +22,13 @@ h4 {
   font-weight: lighter;
   padding: 0;
   margin: 5px 0;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 body::-webkit-scrollbar {
