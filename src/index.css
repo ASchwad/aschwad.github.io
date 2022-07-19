@@ -1,5 +1,8 @@
 html {
+  /*Snap Viewport in Chrome & Firefox*/
   scroll-snap-type: y mandatory;
+  /*Snap Viewport in Safari*/
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
