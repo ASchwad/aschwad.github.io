@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     min-width: 350px;
+    scroll-snap-align: start;
 }
 
 

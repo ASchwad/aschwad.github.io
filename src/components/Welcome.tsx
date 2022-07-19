@@ -6,7 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Welcome() {
   return (
-    <div style={{ height: '100vh', padding: '0 10%', display: "flex", flexDirection: "column", justifyContent: "center" }}>
+    <div style={{ height: '100vh', padding: '0 10%', display: "flex", flexDirection: "column", justifyContent: "center", scrollSnapAlign: "start" }}>
       <h1>Alexander Schoenenwald</h1>
       <h4 style={{ color: "#FDF420" }}>Fullstack Engineer</h4>
       <div style={{ color: 'white', marginTop: 60 }}>

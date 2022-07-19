@@ -4,7 +4,7 @@ import Welcome from './components/Welcome';
 
 function App() {
   return (
-    <div style={{ backgroundColor: "black", display: 'flex', flexDirection: "column" }}>
+    <div>
       <Welcome />
       <Introduction />
     </div>
