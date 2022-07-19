@@ -8,10 +8,19 @@
     scroll-snap-align: start;
 }
 
+.container div:first-child {
+    margin-right: 20px;
+}
+
 
 @media screen and (max-width: 900px) {
     .container {
         flex-direction: column;
         padding: 0 5%;
+        justify-content: center;
+    }
+
+    .container div {
+        margin-right: 0;
     }
 }
