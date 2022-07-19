@@ -6,7 +6,7 @@ export default function Introduction() {
   return (
     <div className="container">
       <Avatar style={{ width: "25vw", height: "25vw", minWidth: 200, minHeight: 200, maxWidth: 300, maxHeight: 300 }} alt="Image of Alexander Schoenenwald" src="avatar.jpeg" />
-      <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-start", maxWidth: "800px", marginLeft: 20 }}>
+      <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-start", maxWidth: "800px" }}>
         <h1>Hey!</h1>
         <p>
           My name is Alex.

@@ -10,11 +10,11 @@ export default function Welcome() {
       <h1>Alexander Schoenenwald</h1>
       <h4 style={{ color: "#FDF420" }}>Fullstack Engineer</h4>
       <div style={{ color: 'white', marginTop: 60 }}>
-        <IconButton href='https://www.linkedin.com/in/alexander-schoenenwald/' target="_blank" style={{ paddingLeft: 0 }}>
-          <LinkedInIcon fontSize="large" style={{ marginRight: 10, color: "#fff" }} />
-        </IconButton>
-        <IconButton href='https://github.com/ASchwad' target="_blank">
+        <IconButton href='https://github.com/ASchwad' target="_blank" style={{ paddingLeft: 0 }}>
           <GitHubIcon fontSize="large" style={{ marginRight: 10, color: "#fff" }} />
+        </IconButton>
+        <IconButton href='https://www.linkedin.com/in/alexander-schoenenwald/' target="_blank">
+          <LinkedInIcon fontSize="large" style={{ marginRight: 10, color: "#fff" }} />
         </IconButton>
         <IconButton href='https://twitter.com/AlexSchwad' target="_blank">
           <TwitterIcon fontSize="large" style={{ marginRight: 10, color: "#fff" }} />
