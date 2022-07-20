@@ -37,7 +37,7 @@ export default function Projects() {
           <h4>{project?.title}</h4>
           <p>{project?.description}</p>
         </CardContent>
-        <img alt={project?.title} src={"projects/" + project?.preview_image} style={{ width: "100%", marginBottom: 15 }}></img>
+        <img alt={project?.title} src={require("./images/" + project?.preview_image)} style={{ width: "100%", marginBottom: 15 }}></img>
       </Card >
     )
   };
