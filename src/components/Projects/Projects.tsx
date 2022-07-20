@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { projects } from './metadata';
+import { Card, CardContent } from '@mui/material';
 
 
 type IProject = {
   key: string,
   title: string,
   description: string,
+  preview_image: string,
 }
 
 export default function Projects() {
@@ -17,7 +19,7 @@ export default function Projects() {
       {
         projects.map(project => {
           return (
-            <div className="project" style={selectedProject === project.key ? { color: "#fdf420" } : {}} key={project.key} onMouseOver={() => setSelectedProject(project.key)} onClick={() => setSelectedProject(project.key)}>
+            <div className="project" style={selectedProject === project.key ? { color: "#fdf420" } : {}} key={project.key} onMouseOver={() => setSelectedProject(project.key)}>
               <h4>{project.title}</h4>
             </div>
           );
@@ -29,10 +31,13 @@ export default function Projects() {
   function ProjectDetails() {
     const project = projects.find(p => p.key === selectedProject);
     return (
-      <div className="project-details">
-        <h4>{project?.title}</h4>
-        <p>{project?.description}</p>
-      </div>
+      <Card className='project-details' sx={{ backgroundColor: 'transparent' }}>
+        <CardContent sx={{ color: "white", margin: 0, padding: "0" }}>
+          <h4>{project?.title}</h4>
+          <p>{project?.description}</p>
+        </CardContent>
+        <img alt={project?.title} src={"projects/" + project?.preview_image} style={{ width: "80%", marginBottom: 15 }}></img>
+      </Card >
     )
   };
 
