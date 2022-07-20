@@ -20,7 +20,7 @@ export default function Projects() {
         projects.map(project => {
           return (
             <div className="project" style={selectedProject === project.key ? { color: "#fdf420" } : {}} key={project.key} onMouseOver={() => setSelectedProject(project.key)}>
-              <h4>{project.title}</h4>
+              <h5>{project.title}</h5>
             </div>
           );
         }
@@ -32,11 +32,12 @@ export default function Projects() {
     const project = projects.find(p => p.key === selectedProject);
     return (
       <Card className='project-details' sx={{ backgroundColor: 'transparent' }}>
-        <CardContent sx={{ color: "white", margin: 0, padding: "0" }}>
+        <h6> </h6>
+        <CardContent sx={{ color: "white", paddingLeft: 0 }}>
           <h4>{project?.title}</h4>
           <p>{project?.description}</p>
         </CardContent>
-        <img alt={project?.title} src={"projects/" + project?.preview_image} style={{ width: "80%", marginBottom: 15 }}></img>
+        <img alt={project?.title} src={"projects/" + project?.preview_image} style={{ width: "100%", marginBottom: 15 }}></img>
       </Card >
     )
   };
@@ -44,9 +45,9 @@ export default function Projects() {
   return (
     <div className="projects-container">
       <div className="projects-list">
-        <h5>Key Projects</h5>
+        <h6>Key Projects</h6>
         <ProjectsList projects={projects.filter((project) => project.type === 'key')} />
-        <h5>Minor Projects</h5>
+        <h6>Minor Projects</h6>
         <ProjectsList projects={projects.filter((project) => project.type === 'minor')} />
       </div>
       <ProjectDetails />

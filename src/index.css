@@ -32,6 +32,13 @@ h4 {
 }
 
 h5 {
+  font-size: 26px;
+  font-weight: normal;
+  padding: 0;
+  margin: 5px 0;
+}
+
+h6 {
   font-size: 18px;
   color: #2B2B2B;
 }
@@ -39,7 +46,6 @@ h5 {
 p {
   font-weight: normal;
   font-size: 20px;
-  text-align: justify;
   line-height: 1.5;
 }
 
