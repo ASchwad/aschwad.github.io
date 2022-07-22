@@ -34,7 +34,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://aschwad.github.io/portfolio",
+  "homepage": "https://aschwad.github.io/",
   "browserslist": {
     "production": [
       ">0.2%",
