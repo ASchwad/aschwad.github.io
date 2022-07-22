@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { projects } from './metadata';
-import { Card, CardContent } from '@mui/material';
-
+import useWindowDimensions from '../../hooks/getWindowDimensions';
 
 type IProject = {
   key: string,
@@ -13,6 +12,7 @@ type IProject = {
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState('ff');
+  const { width } = useWindowDimensions();
 
   function ProjectsList({ projects }: { projects: IProject[] }) {
     return <div className="projects">
@@ -28,19 +28,37 @@ export default function Projects() {
       }
     </div>
   };
-  function ProjectDetails() {
-    const project = projects.find(p => p.key === selectedProject);
+  function ProjectDetails({ project }: { project: IProject | undefined }) {
     return (
-      <Card className='project-details' sx={{ backgroundColor: 'transparent' }}>
+      <div key={project?.key} className='project-details' style={{ backgroundColor: 'transparent' }}>
         <h6> </h6>
-        <CardContent sx={{ color: "white", paddingLeft: 0 }}>
+        <div style={{ color: "white", paddingLeft: 0 }}>
           <h4>{project?.title}</h4>
           <p>{project?.description}</p>
-        </CardContent>
+        </div>
         <img alt={project?.title} src={require("./images/" + project?.preview_image)} style={{ width: "100%", marginBottom: 15 }}></img>
-      </Card >
+      </div >
     )
   };
+
+  if (width < 650) {
+    return (
+      <div className='projects-container'>
+        <div className="projects-slider">
+          {/* <div>
+          <IconButton>
+          <ChevronLeftIcon sx={{ color: '#FDF420' }} />
+          </IconButton>
+          <IconButton>
+          <ChevronRightIcon sx={{ color: '#FDF420' }} />
+          </IconButton>
+        </div> */}
+          {projects.map(project => <ProjectDetails project={project} />)}
+        </div>
+      </div>
+    )
+  }
+
 
   return (
     <div className="projects-container">
@@ -50,7 +68,7 @@ export default function Projects() {
         <h6>Minor Projects</h6>
         <ProjectsList projects={projects.filter((project) => project.type === 'minor')} />
       </div>
-      <ProjectDetails />
+      <ProjectDetails project={projects.find(p => p.key === selectedProject)} />
     </div>
   );
 }
