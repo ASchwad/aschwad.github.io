@@ -15,7 +15,7 @@ export default function Introduction() {
           </span>- currently as Fullstack Engineer and Co-Founder at Futuro Farming GmbH.
         </p>
         <p>
-          Being customer-centric, I am excited about the design and implementation of features from end-to-end: collecting user requirements, prototyping designs, implement the backend/frontend and lastly, measure the success of new features.
+          Being customer-centric, I am excited about the design and implementation of features from end-to-end: collecting user requirements, prototyping designs, implementing the backend/frontend and lastly, measuring the success of new features.
         </p>
       </div>
     </div>

@@ -44,16 +44,21 @@ export default function Projects() {
   if (width < 650) {
     return (
       <div className='projects-container'>
-        <div className="projects-slider">
-          {/* <div>
-          <IconButton>
-          <ChevronLeftIcon sx={{ color: '#FDF420' }} />
-          </IconButton>
-          <IconButton>
-          <ChevronRightIcon sx={{ color: '#FDF420' }} />
-          </IconButton>
-        </div> */}
+        <div id='slider' className="projects-slider">
           {projects.map(project => <ProjectDetails project={project} />)}
+        </div>
+        <div className='swipe-hint'>
+          <p style={{ color: "#fdf420", margin: "5px 0 0 0" }}>SWIPE</p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+            <defs>
+              <marker fill='#fdf420' id="arrowhead" markerWidth="12" markerHeight="6"
+                refX="0" refY="3" orient="auto">
+                <polygon points="0 0, 6 3, 0 6" />
+              </marker>
+            </defs>
+            <line x1="50" y1="55" x2="180" y2="55" stroke="#fdf420"
+              strokeWidth="2" markerEnd="url(#arrowhead)" />
+          </svg>
         </div>
       </div>
     )

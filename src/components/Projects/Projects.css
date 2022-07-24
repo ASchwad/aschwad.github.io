@@ -32,7 +32,7 @@
 }
 
 .projects-slider {
-    width: 100%;
+    width: 96vw;
     display: inline-flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -41,6 +41,16 @@
     /* IE and Edge */
     /* scrollbar-width: none; */
     /* Firefox */
+}
+
+.swipe-hint {
+    align-self: end;
+    padding-right: 10vw;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 160px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -55,6 +65,8 @@
         min-height: 100vh;
         padding: 0;
         align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .project-details {
