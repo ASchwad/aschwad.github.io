@@ -50,13 +50,6 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-  html {
-    /*Snap Viewport in Chrome & Firefox*/
-    scroll-snap-type: none;
-    /*Snap Viewport in Safari*/
-    /* -webkit-overflow-scrolling: unset; */
-  }
-
   p {
     padding: 0;
     font-size: 18px;

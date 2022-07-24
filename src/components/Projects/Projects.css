@@ -59,8 +59,14 @@
 }
 
 
-
 @media screen and (max-width: 650px) {
+    html {
+        /*Snap Viewport in Chrome & Firefox*/
+        scroll-snap-type: none;
+        /*Snap Viewport in Safari*/
+        /* -webkit-overflow-scrolling: unset; */
+    }
+
     .projects-container {
         min-height: 100vh;
         padding: 0;
@@ -78,6 +84,10 @@
 
     .project-details h4 {
         font-size: 26px;
+    }
+
+    .project-details h6 {
+        margin-bottom: 2px;
     }
 
     .project-details img {
