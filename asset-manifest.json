@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.25ef37d7.css",
-    "main.js": "/static/js/main.a77c6e86.js",
-    "static/media/dht.png": "/static/media/dht.ad15d359353511127908.png",
+    "main.js": "/static/js/main.349092e7.js",
     "static/media/route-builder.gif": "/static/media/route-builder.0874e3b25f51f6c6fb36.gif",
     "static/media/gtc.gif": "/static/media/gtc.265976b7c807b81999dc.gif",
     "static/media/lyza.gif": "/static/media/lyza.f64ce7362da5c2bad316.gif",
     "static/media/ff.png": "/static/media/ff.825488e64a005f1b0139.png",
     "static/media/lineage.png": "/static/media/lineage.4e4be678c6d5f369b9cc.png",
-    "static/media/avatar.jpeg": "/static/media/avatar.e4ee3d0d242169d828de.jpeg",
+    "static/media/dht.jpeg": "/static/media/dht.dd9a056a0be0d9d3b61f.jpeg",
+    "static/media/avatar.jpeg": "/static/media/avatar.07a125e98f5ff6239c13.jpeg",
+    "static/media/solarkraft.jpeg": "/static/media/solarkraft.71360681d9a56624dac1.jpeg",
     "static/media/translations.png": "/static/media/translations.679421d7dd308da8c26e.png",
     "static/media/lyza2.png": "/static/media/lyza2.0977ed450d6995c61e9e.png",
     "index.html": "/index.html",
     "main.25ef37d7.css.map": "/static/css/main.25ef37d7.css.map",
-    "main.a77c6e86.js.map": "/static/js/main.a77c6e86.js.map"
+    "main.349092e7.js.map": "/static/js/main.349092e7.js.map"
   },
   "entrypoints": [
     "static/css/main.25ef37d7.css",
-    "static/js/main.a77c6e86.js"
+    "static/js/main.349092e7.js"
   ]
 }
