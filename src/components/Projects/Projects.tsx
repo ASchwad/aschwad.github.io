@@ -27,7 +27,7 @@ export default function Projects() {
       {
         projects.map(project => {
           return (
-            <div className="project" style={selectedProject === project.key ? { color: "#fdf420" } : {}} key={project.key} onMouseOver={() => setSelectedProject(project.key)}>
+            <div className="project" style={selectedProject === project.key ? { color: "#fdf420" } : {}} key={project.key} onClick={() => setSelectedProject(project.key)}>
               <h5>{project.title}</h5>
             </div>
           );
