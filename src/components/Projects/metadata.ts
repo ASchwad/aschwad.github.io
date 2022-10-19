@@ -47,6 +47,23 @@ export const projects = [
     ]
   },
   {
+    key: "solarkraft",
+    preview_image: "solarkraft.jpeg",
+    title: "Explore solar power in german cities (via public APIs)",
+    description: "Calculate metrics for solar power in individual german cities via a React Web App by using public APIs from the German Bundesnetzagentur (Marktstammdatenregister). ",
+    type: "minor",
+    references: [
+      {
+        title: "Github",
+        url: "https://github.com/ASchwad/solarkraft-erkunden"
+      },
+      {
+        title: "Web App",
+        url: "https://aschwad.github.io/solarkraft-erkunden/"
+      },
+    ]
+  },
+  {
     key: "lyza",
     preview_image: "lyza.gif",
     title: "Lyza: Spotify Playlist analyzer",
@@ -99,7 +116,7 @@ export const projects = [
   },
   {
     key: "dht",
-    preview_image: "dht.png",
+    preview_image: "dht.jpeg",
     title: "DHT11: Humidity and temperature sensor",
     description: "Raspberry PI with a DHT11 humidity and temperature sensor provided insights in our apartment climate via Google Firestore and Telegram Push Notification API.",
     type: "minor",
