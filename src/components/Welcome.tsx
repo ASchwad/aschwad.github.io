@@ -8,7 +8,7 @@ export default function Welcome() {
   return (
     <div style={{ height: '100vh', padding: '0 10%', display: "flex", flexDirection: "column", justifyContent: "center", scrollSnapAlign: "start" }}>
       <h1>Alexander Schoenenwald</h1>
-      <h4 style={{ color: "#FDF420" }}>Fullstack Engineer</h4>
+      <h4 style={{ color: "#FDF420" }}>Software Engineer at Palantir</h4>
       <div style={{ color: 'white', marginTop: 60 }}>
         <IconButton href='https://github.com/ASchwad' target="_blank" style={{ paddingLeft: 0 }}>
           <GitHubIcon fontSize="large" style={{ marginRight: 10, color: "#fff" }} />

@@ -65,7 +65,7 @@ export default function Projects() {
           <h4>{project?.title}</h4>
           <p>{project?.description}</p>
         </div>
-        <img alt={project?.title} src={require("./images/" + project?.preview_image)} style={{ width: "100%", marginBottom: 15 }} />
+        <img alt={project?.title} src={require("./images/" + project?.preview_image)} style={{ width: "100%", marginBottom: 15, borderRadius: 12 }} />
         <ProjectReferences references={project?.references} />
       </div >
     )
