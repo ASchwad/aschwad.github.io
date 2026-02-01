@@ -1,15 +1,20 @@
-import React from 'react';
-import Introduction from './components/Introduction/Introduction';
-import Projects from './components/Projects/Projects';
-import Welcome from './components/Welcome';
-
 function App() {
   return (
-    <>
-      <Welcome />
-      <Introduction />
-      <Projects />
-    </>
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <p>
+        📦 This page has moved to{' '}
+        <a href="https://schoenenwald.com" style={{ color: '#FF8C00' }}>
+          schoenenwald.com
+        </a>
+      </p>
+    </div>
   );
 }
 
